@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* header area */
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > h2 {
+    margin-left: 20px;
+}
+
+header > nav {
+	width:600px;
+	height:100%;
+}
+
+header ul {
+	width:100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+header ul > li {
+	font-size:20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+/* header area end */
+
+/* main slide area */
+#bg_slide {
+    background-color: #d3d3d3;
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+#bg_slide > .main_title {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg_slide > .main_title  > .title{
+    width: 35%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+#bg_slide > .main_title  > .title h2 { 
+    font-size: 35px;
+}
+
+#bg_slide > .card {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 350px;
+    background-color: #f7eaea;
+}
+
+/* main slide area end*/
+
+/* content area */
+#content {
+    height: 500px;
+    background-color: #B5D0D5;
+}
+/* content area end */
+
+/* footer area */
+footer {
+    height: 200px;
+    background-color: #777777;
+}
+/* footer area end */
