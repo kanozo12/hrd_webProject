@@ -19,6 +19,10 @@ a {
     margin: 0 auto;
 }
 
+.margin_area {
+    margin-top: 3rem;
+}
+
 /* header area */
 header {
     width: 100%;
@@ -28,39 +32,51 @@ header {
     justify-content: space-between;
 }
 
-header > h2 {
+header>h2 {
     margin-left: 20px;
 }
 
-header > nav {
-	width:600px;
-	height:100%;
+header>nav {
+    width: 600px;
+    height: 100%;
 }
 
 header ul {
-	width:100%;
-	height: 100%;
-	display: flex;
-	justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-header ul > li {
-	font-size:20px;
-	height: 100%;
-	display: flex;
-	align-items: center;
+header ul>li {
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
+
 /* header area end */
 
 /* main slide area */
-#bg_slide {
-    background-color: #d3d3d3;
-    position: relative;
+#slide {
     width: 100%;
     height: 800px;
+    position: relative;
 }
 
-#bg_slide > .main_title {
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_title {
     position: absolute;
     width: 100%;
     height: 100px;
@@ -68,9 +84,10 @@ header ul > li {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
-#bg_slide > .main_title  > .title{
+.main_title>.title {
     width: 35%;
     height: 80%;
     display: flex;
@@ -81,17 +98,37 @@ header ul > li {
     border-radius: 10px;
 }
 
-#bg_slide > .main_title  > .title h2 { 
+.main_title>.title h2 {
     font-size: 35px;
 }
 
-#bg_slide > .card {
+/* card area */
+.card {
     width: 100%;
     height: 350px;
     position: absolute;
     top: 350px;
-    background-color: #f7eaea;
+    z-index: 1;
+    overflow: hidden;
 }
+
+.swiper-container2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f3f3f3;
+    opacity: 0.8;
+}
+
+/* card area end */
 
 /* main slide area end*/
 
@@ -100,6 +137,7 @@ header ul > li {
     height: 500px;
     background-color: #B5D0D5;
 }
+
 /* content area end */
 
 /* footer area */
@@ -107,4 +145,5 @@ footer {
     height: 200px;
     background-color: #777777;
 }
+
 /* footer area end */
