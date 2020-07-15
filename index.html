@@ -3,19 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ******************* -->
+    <!-- Swiper Api -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- *******************/ -->
 </head>
 
 <body>
-    <div class="container">
 
-        <!-- header area -->
+
+    <!-- header area -->
+    <div class="container">
         <header>
             <div class="header_left">
                 <div class="logo">
@@ -28,71 +31,201 @@
                 </div>
             </div>
 
+            <div class="header_right">
+                <nav>
+                    <ul>
+                        <li><a href="#">FreeBoard</a></li>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
 
-            <nav>
-                <ul>
-                    <li><a href="#">menu1</a></li>
-                    <li><a href="#">menu2</a></li>
-                    <li><a href="#">menu3</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- header area end-->
+                </nav>
 
-        <!-- main background slide section -->
-        <section id="slide">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/bg1.jpg"></div>
-                    <div class="swiper-slide"><img src="img/bg2.jpg"></div>
-                    <div class="swiper-slide"><img src="img/bg3.jpg"></div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="main_title">
-                    <div class="title">
-                        <h2>Main Title</h2>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
                     </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="swiper-container2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
-                        <div class="swiper-slide">Slide 10</div>
+        </header>
+    </div>
+
+    <!-- header area end-->
+
+    <!-- Main Slide Section -->
+    <section id="slide">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/bg1.jpg"></div>
+                <div class="swiper-slide"><img src="img/bg2.jpg"></div>
+                <div class="swiper-slide"><img src="img/bg3.jpg"></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="main_title">
+            <div class="title">
+                <h2>Let's CodeBook</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample1.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample2.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample3.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample4.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample5.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample6.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample7.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample8.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample9.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-item">
+                            <div class="img">
+                                <img src="img/sample10.jpg">
+                            </div>
+                            <div class="content"></div>
+                        </div>
+                    </div>
                 </div>
-        </section>
-        <!-- main background slide section end -->
+            </div>
 
-        <div class="margin_area"></div>
+        </div>
 
-        <!-- content section -->
+    </section>
+    <!-- Main Slide Section End-->
+
+    <div class="margin_area"></div>
+
+    <!-- Content Section -->
+    <div class="container">
         <section id="content">
 
-        </section>
-        <!-- content section end -->
+            <div class="mini_board">
+                <div class="item">
+                    <div class="mini_board_title">
+                        <p>Notice</p>
+                    </div>
+                    <div class="mini_board_content">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                        <a href="#">
+                            <p> Porro laudantium ea error impedit exercitationem labore.</p>
+                        </a>
+                        <a href="#">
+                            <p>Rem accusamus eaque nam facilis doloremque!</p>
+                        </a>
+                        <a href="#">
+                            <p>eveniet Magnam assumenda eaque dolore?</p>
+                        </a>
+                    </div>
+                    <a href="#" class="item_btn gray_btn">more Notice</a>
+                </div>
+                <div class="item">
+                    <div class="mini_board_title">
+                        <p class="title">FAQ</p>
+                    </div>
+                    <div class="mini_board_content">
+                        <a href="#">
+                            <p class="content">Lorem ipsum dolor. adipisci hic numquam odit. Corporis!</p>
+                        </a>
+                        <a href="#">
+                            <p class="content">sit amet consectetur adipisicing elit.</p>
+                        </a>
+                        <a href="#">
+                            <p class="content">Iusto repellendus possimus cupiditate velit delectus.</p>
+                        </a>
+                        <a href="#">
+                            <p class="content">ipsam at dolore distinctio deserunt molestiae veritatis illum.</p>
+                        </a>
+                    </div>
+                    <a href="#" class="item_btn gray_btn">more FAQ</a>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- Content Section End -->
 
-        <div class="margin_area"></div>
+    <div class="margin_area"></div>
 
-        <!-- footer area -->
-        <footer>
+    <!-- Footer Area -->
+    <footer>
+        <p>CopyRight © kanozo12. All Rights Reserved</p>
+    </footer>
+    <!-- Footer Area End -->
 
-        </footer>
-
-        <script src="js/slide.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 
 </html>

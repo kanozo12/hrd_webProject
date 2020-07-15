@@ -1,23 +1,20 @@
 new Swiper('.swiper-container', {
-
-    effect: 'fade', // 페이드 효과 사용
-
-    loop: true, // 무한 반복
-
+    direction: 'vertical',
+    loop: true,
     autoplay: {
         delay: 5000,
     },
     speed: 2000,
 });
 
-   
+
 new Swiper('.swiper-container2', {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 80,
-    centeredSlides: true,
+    centeredSlides: false,
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 6000,
     },
     speed: 1000,
 });
