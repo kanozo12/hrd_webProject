@@ -23,36 +23,6 @@ a {
     margin-top: 3rem;
 }
 
-/* btn_layout area */
-.gray_btn {
-    padding: 8px 12px 8px 12px;
-    border: 1px solid #6c757d;
-    color: #6c757d;
-    border-radius: 5px;
-}
-
-.gray_btn:hover {
-    background-color: #6c757d;
-    color: #fff;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color;
-}
-
-.yello_btn {
-    padding: 8px 12px 8px 12px;
-    border: 1px solid #ffc107;
-    color: #ffc107;
-    border-radius: 5px;
-}
-
-.yello_btn:hover {
-    background-color: #ffc107;
-    color: #212529;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-/* btn_layout area end */
-
-
 /* header area */
 header {
     width: 100%;
@@ -114,6 +84,10 @@ header ul>li {
     display: none;
 }
 
+.dropdown i {
+    font-size: 35px;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -156,6 +130,11 @@ header ul>li {
 .swiper-container {
     width: 100%;
     height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
 }
 
 .swiper-slide img {
@@ -215,7 +194,6 @@ header ul>li {
     height: 100%;
     text-align: center;
     font-size: 18px;
-    background-color: #f3f3f3;
     opacity: 0.8;
 }
 
@@ -239,6 +217,7 @@ header ul>li {
 
 .slide-item>.content {
     flex: 1;
+    background-color: #f3f3f3;
 }
 
 /* card area end */
@@ -247,7 +226,6 @@ header ul>li {
 
 /* content area */
 #content {
-    height: 500px;
     background-color: #e2e2e2;
     display: flex;
     justify-content: center;
@@ -255,7 +233,7 @@ header ul>li {
 }
 
 .mini_board {
-    height: 100%;
+    padding: 50px 0 50px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -283,7 +261,8 @@ header ul>li {
 }
 
 .mini_board .item {
-    width: 40%;
+    width: 100%;
+    padding: 20px;
 }
 
 /* content area end */
@@ -304,56 +283,3 @@ footer p {
 
 /* footer area end */
 
-@media screen and (max-width:1200px) {
-    .container {
-        width: 1000px
-        margin: 0 auto;
-    }
-
-    nav ul {
-        display: none;
-    }    
-    
-    .dropdown {
-        display: inline;
-    }
-    .btn_group {
-        display: none;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .container {
-        width: 500px;
-        margin: 0 auto;
-    }
-
-    nav ul {
-        display: none;
-    }    
-    
-    .dropdown {
-        display: inline;
-    }
-    .btn_group {
-        display: none;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .container {
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    nav ul {
-        display: none;
-    }    
-    
-    .dropdown {
-        display: inline;
-    }
-    .btn_group {
-        display: none;
-    }
-}

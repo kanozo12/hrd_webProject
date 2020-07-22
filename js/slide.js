@@ -17,21 +17,36 @@ new Swiper('.swiper-container2', {
         delay: 6000,
     },
     breakpoints: {
-        // when window width is >= 320px
-        1200: {
+        1600: {
+          slidesPerView: 4,
+          spaceBetween: 50
+        },
+
+        1440: {
           slidesPerView: 3,
-          spaceBetween: 20
+          spaceBetween: 100
         },
-        // when window width is >= 480px
-        768: {
+
+        1200: {
           slidesPerView: 2,
-          spaceBetween: 30
+          spaceBetween: 240
         },
-        // when window width is >= 640px
-        480: {
+
+        1020: {
+          slidesPerView: 2,
+          spaceBetween: 220
+        },
+
+        864: {
+          slidesPerView: 2,
+          spaceBetween: 100
+        },
+
+        624: {
           slidesPerView: 1,
-          spaceBetween: 40
-        }
+          
+        },
+
       },
     speed: 1000,
 });
