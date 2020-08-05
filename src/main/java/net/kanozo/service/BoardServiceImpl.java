@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import net.kanozo.dao.BoardDAO;
 import net.kanozo.domain.BoardVO;
 import net.kanozo.domain.Criteria;
+import net.kanozo.domain.MainSlideItemVO;
+import net.kanozo.domain.SampleFreeVO;
 import net.kanozo.domain.SampleListVO;
 
 @Service
@@ -67,5 +69,15 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public List<SampleListVO> sampleList() {
 		return dao.sampleList();
+	}
+	
+	@Override
+	public List<SampleFreeVO> sampleFree() {
+		return dao.sampleFree();
+	}
+
+	@Override
+	public List<MainSlideItemVO> getSlideItem() {
+		return dao.getSlideItem();
 	}
 }

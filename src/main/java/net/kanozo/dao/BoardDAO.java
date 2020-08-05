@@ -4,6 +4,8 @@ import java.util.List;
 
 import net.kanozo.domain.BoardVO;
 import net.kanozo.domain.Criteria;
+import net.kanozo.domain.MainSlideItemVO;
+import net.kanozo.domain.SampleFreeVO;
 import net.kanozo.domain.SampleListVO;
 
 public interface BoardDAO {
@@ -41,4 +43,15 @@ public interface BoardDAO {
 	public Integer getCnt2(Criteria cri);
 	
 	public List<SampleListVO> sampleList();
+	
+	public List<SampleFreeVO> sampleFree();
+	
+	public List<MainSlideItemVO> getSlideItem();
+	
+//***************** 글쓰기 프로시저 개발 중 *************************
+	
+	//HashMap을 이용
+//	public void mapProcedureList(Map map) throws Exception;
+
+//************************************************************
 }

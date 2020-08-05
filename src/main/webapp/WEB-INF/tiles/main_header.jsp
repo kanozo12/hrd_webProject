@@ -7,7 +7,7 @@
 	<header>
 		<div class="header_left">
 			<div class="logo">
-				<h2>CodeBook</h2>
+				<h2><a href="/">CodeBook</a></h2>
 			</div>
 
 			<div class="btn_group">
@@ -19,9 +19,9 @@
 		<div class="header_right">
 			<nav>
 				<ul>
-					<li><a href="#">CodeBook</a></li>
-					<li><a href="#">FreeBoard</a></li>
-					<li><a href="#">Notice</a></li>
+					<li><a href="/board/list">CodeBook</a></li>
+					<li><a href="/board/list2">FreeBoard</a></li>
+					<li><a href="/notice/noticeList">Notice</a></li>
 					<li><a href="#">FAQ</a></li>
 				</ul>
 
