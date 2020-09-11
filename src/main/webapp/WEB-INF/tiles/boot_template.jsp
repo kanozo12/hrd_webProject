@@ -7,11 +7,12 @@
 
 <head>
 	<link rel="stylesheet" href="/app/css/prism.css" />
+    <link rel="stylesheet" href="/app/css/list.css" />
     <link rel="stylesheet" href="/webjars/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
     <script src="/webjars/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="/webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+    <script src="https://kit.fontawesome.com/b79e81a6e4.js" crossorigin="anonymous"></script>
     <script>
         $(function () {
             if (document.body.clientHeight > window.innerHeight - 24) {

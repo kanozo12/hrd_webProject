@@ -7,6 +7,7 @@
 
 <head>
 	<link rel="stylesheet" href="/app/css/style.css">
+	
     <link rel="stylesheet" href="/app/css/common.css">
     
     <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
