@@ -15,6 +15,7 @@
 				<p class="mt-3">공지사항</p>
 				<div class="line-bar mt-2 active"></div>
 			</div>
+
 			<div class="cate-item">
 				<i class="fas fa-bullhorn"></i>
 				<p class="mt-3">자유게시판</p>
@@ -50,13 +51,42 @@
 							href="/board/view2/${board.id}${criteria.getQuery(criteria.page)}">${board.title}</a>
 						</td>
 						<td class="t-c">-</td>
-						<fmt:parseDate var="dateFmt" pattern="yyyy-MM-dd" value="${board.writeDate}"/>
-						<fmt:formatDate var="dateTemParse" pattern="yyyy-MM-dd" value="${dateFmt}" />
+						<fmt:parseDate var="dateFmt" pattern="yyyy-MM-dd"
+							value="${board.writeDate}" />
+						<fmt:formatDate var="dateTemParse" pattern="yyyy-MM-dd"
+							value="${dateFmt}" />
 						<td class="t-c">${dateTemParse}</td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
+
+
+		<nav>
+			<ul class="pagination justify-content-center align-items-center">
+				<c:if test="${criteria.prev}">
+					<li class="page-item"><a
+						href="/board/list${criteria.getQuery(criteria.start - 1)}"
+						class="page-link" aria-label="Previous"> <span
+							aria-hidden="true">&laquo;</span>
+					</a></li>
+				</c:if>
+
+				<c:forEach var="i" begin="${criteria.start}" end="${criteria.end}"
+					step="1">
+					<li class="page-item"><a
+						href="/board/list${criteria.getQuery(i)}" class="page-link">${i}</a>
+					</li>
+				</c:forEach>
+
+				<c:if test="${criteria.next}">
+					<li class="page-item"><a
+						href="/board/list${criteria.getQuery(criteria.end + 1)}"
+						class="page-link" aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+					</a></li>
+				</c:if>
+			</ul>
+		</nav>
 	</div>
 	<script>
 		$(function() {
